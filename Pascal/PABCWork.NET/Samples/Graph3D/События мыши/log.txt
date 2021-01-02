@@ -1,0 +1,22 @@
+Коллекция была изменена; невозможно выполнить операцию перечисления.
+   в System.Collections.Hashtable.HashtableEnumerator.MoveNext()
+   в PascalABCCompiler.NetHelper.NetHelper.IsNetNamespace(String name, Type tt) в D:\PABC_Git\TreeConverter\NetWrappers\NetHelper.cs:строка 932
+   в CodeCompletion.NamespaceScope.FindName(String s) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 4619
+   в CodeCompletion.NamespaceScope.FindOverloadNames(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 4610
+   в CodeCompletion.NamespaceScope.FindOverloadNamesOnlyInType(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 4734
+   в CodeCompletion.SymScope.FindOverloadNames(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 972
+   в CodeCompletion.TypeScope.FindOverloadNames(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 4396
+   в CodeCompletion.ProcScope.FindOverloadNames(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 2093
+   в CodeCompletion.SymScope.FindOverloadNames(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 968
+   в CodeCompletion.SymScope.FindOverloadNames(String name) в D:\PABC_Git\CodeCompletion\SymTable.cs:строка 968
+   в CodeCompletion.DomSyntaxTreeVisitor.visit(ident _ident) в D:\PABC_Git\CodeCompletion\DomSyntaxTreeVisitor.cs:строка 434
+   в PascalABCCompiler.SyntaxTree.ident.visit(IVisitor visitor) в D:\PABC_Git\SyntaxTree\tree\Tree.cs:строка 885
+   в CodeCompletion.DomSyntaxTreeVisitor.visit(method_call _method_call) в D:\PABC_Git\CodeCompletion\DomSyntaxTreeVisitor.cs:строка 2823
+   в PascalABCCompiler.SyntaxTree.method_call.visit(IVisitor visitor) в D:\PABC_Git\SyntaxTree\tree\Tree.cs:строка 15175
+   в CodeCompletion.DomSyntaxTreeVisitor.visit(dot_node _dot_node) в D:\PABC_Git\CodeCompletion\DomSyntaxTreeVisitor.cs:строка 2488
+   в PascalABCCompiler.SyntaxTree.dot_node.visit(IVisitor visitor) в D:\PABC_Git\SyntaxTree\tree\Tree.cs:строка 14359
+   в CodeCompletion.DomSyntaxTreeVisitor.visit(method_call _method_call) в D:\PABC_Git\CodeCompletion\DomSyntaxTreeVisitor.cs:строка 2823
+   в PascalABCCompiler.SyntaxTree.method_call.visit(IVisitor visitor) в D:\PABC_Git\SyntaxTree\tree\Tree.cs:строка 15175
+   в CodeCompletion.DomSyntaxTreeVisitor.visit(dot_node _dot_node) в D:\PABC_Git\CodeCompletion\DomSyntaxTreeVisitor.cs:строка 2488
+   в PascalABCCompiler.SyntaxTree.dot_node.visit(IVisitor visitor) в D:\PABC_Git\SyntaxTree\tree\Tree.cs:строка 14359
+   в CodeCompletion.DomSyntaxTreeVisitor.visit(var_def_statement _var_def_statement) в D:\PABC_Git\CodeCompletion\DomSyntaxTreeVisitor.cs:строка 542
