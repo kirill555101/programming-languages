@@ -3,10 +3,9 @@
 def bubble_sort(array = nil)
   return [] if array.nil?
 
-  length = array.length
   new_array = Array.new array
-  length.times do |i|
-    (i + 1).upto(length - 1) do |j|
+  array.length.times do |i|
+    (i + 1).upto(array.length - 1) do |j|
       new_array[i], new_array[j] = new_array[j], new_array[i] if new_array[i] > new_array[j]
     end
   end
