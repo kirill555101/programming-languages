@@ -5,8 +5,8 @@ def bubble_sort(array = nil)
 
   length = array.length
   new_array = Array.new array
-  (0...length - 1).each do |i|
-    (i + 1...length).each do |j|
+  length.times do |i|
+    (i + 1).upto(length - 1).each do |j|
       new_array[i], new_array[j] = new_array[j], new_array[i] if new_array[i] > new_array[j]
     end
   end

@@ -10,7 +10,7 @@ def shaker_sort(array = nil)
   while swapped
     swapped = false
     # Left to right
-    (start_index...end_index).each do |i|
+    start_index.upto(end_index - 1).each do |i|
       if new_array[i] > new_array[i + 1]
         new_array[i], new_array[i + 1] = new_array[i + 1], new_array[i]
         swapped = true

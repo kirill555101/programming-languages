@@ -5,10 +5,10 @@ def selection_sort(array = nil)
 
   length = array.length
   new_array = Array.new array
-  (0...length - 1).each do |i|
+  (length - 1).times do |i|
     min_index = i
 
-    (i + 1...length).each do |j|
+    (i + 1).upto(length - 1) do |j|
       min_index = j if new_array[min_index] > new_array[j]
     end
 
