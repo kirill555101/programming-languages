@@ -5,9 +5,8 @@ def selection_sort(array = nil)
 
   new_array = Array.new array
   (array.length - 1).times do |i|
-    if element = new_array.each_with_index.select { |el| el[1] > i && el[0] < new_array[i] }.min
-      new_array[element[1]], new_array[i] = new_array[i], new_array[element[1]]
-    end
+    element = new_array.each_with_index.select { |el| el[1] >= i && el[0] <= new_array[i] }.min
+    new_array[element[1]], new_array[i] = new_array[i], new_array[element[1]]
   end
   new_array
 end
