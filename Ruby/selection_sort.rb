@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def selection_sort(array = nil)
-  return [] if array.nil?
+  return [] if array.nil? || !array.is_a?(Array)
 
   new_array = Array.new array
   (array.length - 1).times do |i|

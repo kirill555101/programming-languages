@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def shaker_sort(array = nil)
-  return [] if array.nil?
+  return [] if array.nil? || !array.is_a?(Array)
 
   new_array = Array.new array
   swapped = true

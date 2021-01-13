@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def quick_sort(array = nil)
-  return [] if array.nil?
+  return [] if array.nil? || !array.is_a?(Array)
   return array if array.length <= 1
 
   item = array.sample(1).first

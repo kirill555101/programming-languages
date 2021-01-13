@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def binary_search(array = [], element = nil)
-  return if array.empty? || element.nil?
+  return if array.empty? || element.nil? || !array.is_a?(Array)
 
   max_index = array.length - 1
   mid_index = max_index / 2
