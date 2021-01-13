@@ -3,7 +3,7 @@
 def shaker_sort(array = nil)
   return [] if array.nil? || !array.is_a?(Array)
 
-  new_array = Array.new array
+  new_array = array.clone
   swapped = true
   start_index = 0
   end_index = array.length - 1

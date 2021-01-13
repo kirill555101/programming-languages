@@ -3,7 +3,7 @@
 def bubble_sort(array = nil)
   return [] if array.nil? || !array.is_a?(Array)
 
-  new_array = Array.new array
+  new_array = array.clone
   array.length.times do |i|
     (i + 1).upto(array.length - 1) do |j|
       new_array[i], new_array[j] = new_array[j], new_array[i] if new_array[i] > new_array[j]
