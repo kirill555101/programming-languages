@@ -47,7 +47,7 @@ def field(snake1,cell):
                 if i == part[1] and j == part[0]:
                     message += "*"
                 elif i == cell[1] and j == cell[0]:
-                   message += "Я"
+                    message += "Я"
                 elif j == 40:
                     message += "\n"
                 else:

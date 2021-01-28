@@ -41,9 +41,9 @@ start = None
 while start != "":
     start = (input("\nНачальная позиция: "))
     if start:
-          start = int(start)
-          finish = int(input("Конечная позиция: "))
-          print("Срез word[",start,":",finish,"] выглядит как", end=" ")
-          print(word[start:finish])
+        start = int(start)
+        finish = int(input("Конечная позиция: "))
+        print("Срез word[",start,":",finish,"] выглядит как", end=" ")
+        print(word[start:finish])
 
 input("\n\nНажмите Enter, чтобы выйти.")
