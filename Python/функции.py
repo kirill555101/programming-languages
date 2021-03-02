@@ -1,6 +1,6 @@
 def mine(x):
     """Привет, это описание"""
-    return 2*x
+    return 2 * x
 
 
 print(mine(2))

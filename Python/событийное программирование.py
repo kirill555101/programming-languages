@@ -37,18 +37,18 @@ def writetext():
         message += entry1.get()
     else:
         message = "Вы ничего не ввели"
-    text1.delete(0.0,END)
-    text1.insert(0.0,message)
-bttn2["command"]=writetext
+    text1.delete(0.0, END)
+    text1.insert(0.0, message)
+bttn2["command"] = writetext
 
 
 # текстовое поле
 entry1 = Entry()
-entry1.grid(row=2,column=0)
+entry1.grid(row = 2, column = 0)
 
 
 # текстовая область
-text1 = Text(width=20,height=10,wrap=WORD)
+text1 = Text(width = 20, height = 10, wrap = WORD)
 text1.grid()
 
 

@@ -93,7 +93,7 @@ HANGMAN = (
           $$$$$$$$$$$$$$$$$$$$$$$$$$$$
           $                          $
 """)
-MAX_WRONG = len(HANGMAN)-1
+MAX_WRONG = len(HANGMAN) - 1
 WORDS = (
     "СЛОН","ЯГУАР","МЕДВЕДЬ","ЛИСА","ОЛЕНЬ","ЛАМА","КРОЛИК","ВОЛК",
     "СОБАКА","КОШКА","ХОРЕК","ПУМА","ЗАЯЦ","АНТИЛОПА","ЛЕВ","ТИГР"
@@ -128,7 +128,7 @@ while wrong < MAX_WRONG and so_far != word:
     else:
         print(f"\nК сожалению, буквы {guess} нет в слове.")
         wrong += 1
-if wrong==MAX_WRONG:
+if wrong == MAX_WRONG:
     print(HANGMAN[wrong])
     print("\nВас повесили!")
 else:
