@@ -36,8 +36,8 @@ pygame.display.set_icon(icon)
 # Спрайт игрок
 class Player(pygame.sprite.Sprite):
     move = 18
-    Is_up = True
-    Is_on_platform = True
+    is_up = True
+    is_on_platform = True
     move_down = 0
 
     def __init__(self, x: int, y: int, group):
@@ -56,16 +56,16 @@ class Player(pygame.sprite.Sprite):
     def update(self, *side: bool):
         global SCORE
 
-        if self.Is_on_platform:
-            if self.Is_up and self.move:
+        if self.is_on_platform:
+            if self.is_up and self.move:
                 self.rect.y -= self.move
                 self.move -= 1
             elif self.rect.y < (self.current_platform.rect.y - 50):
-                self.Is_up = False
+                self.is_up = False
                 self.move += 1
                 self.rect.y += self.move
             else:
-                self.Is_up = True
+                self.is_up = True
             self.move_down = 0
         else:
             if self.pause:
@@ -74,7 +74,7 @@ class Player(pygame.sprite.Sprite):
                 self.pause = FPS // 1.75
                 self.fall_sound.play()
 
-            self.Is_up = True
+            self.is_up = True
             self.move = 15
             self.move_down += 1
             self.rect.y += self.move_down
@@ -105,7 +105,7 @@ class Player(pygame.sprite.Sprite):
             if plat.rect.left - 10 <= self.rect.x <= plat.rect.right + 10 and (
                     (self.rect.y <= y <= self.current_platform.rect.y) or (
                     self.rect.y >= y >= self.current_platform.rect.y)):
-                self.Is_on_platform = True
+                self.is_on_platform = True
                 if self.rect.y < y < self.current_platform.rect.y:
                     SCORE += 1
                     for pl in self.group:
@@ -113,7 +113,7 @@ class Player(pygame.sprite.Sprite):
                 self.current_platform = plat
                 break
             else:
-                self.Is_on_platform = False
+                self.is_on_platform = False
 
 
 # Спрайт платформа
